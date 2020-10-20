@@ -13,6 +13,15 @@ namespace BookStore.Controllers
             return View();
         }
 
+        public ActionResult News()
+        {
+            return View();
+        }
+
+        public ActionResult Promotion()
+        {
+            return View();
+        }
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -24,6 +33,11 @@ namespace BookStore.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
+            return View();
+        }
+
+        public ActionResult Product()
+        {
             return View();
         }
     }

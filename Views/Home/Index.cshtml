@@ -1,31 +1,196 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<!-- <div class="link">
+                            <ul class="unliststyle">
+                                <li class="link-item"><a href="">
+                                    <i class="fa fa-home"></i>
+                                    <span>Trang Chủ</span>
+                                </a></li>
+                                <li class="link-item"><a href="">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span>Navigation link</span>
+                                </a></li>
+                                <li class="link-item"><a href="">
+                                    <i class="fa fa-long-arrow-right"></i>
+                                    <span>Navigation link</span>
+                                </a></li>
+                            </ul>
+                        </div> -->
+<div class="slide-show">
+    <div class="slide-stage">
+        <div class="slide-item active"><img src="~/wwwroot/public/slideshow/1.jpg" alt=""></div>
+        <div class="slide-item"><img src="~/wwwroot/public/slideshow/2.jpg" alt=""></div>
+        <div class="slide-item"><img src="~/wwwroot/public/slideshow/3.jpg" alt=""></div>
+        <div class="slide-item"><img src="~/wwwroot/public/slideshow/4.jpg" alt=""></div>
+        <div class="slide-item"><img src="~/wwwroot/public/slideshow/5.jpg" alt=""></div>
+    </div>
+    <div class="slide-control">
+        <ul class="slide-page unliststyle">
+            <!-- <li class="page-poiter fa fa-circle"></li>
+            <li class="page-poiter fa fa-circle-o"></li> -->
+        </ul>
+        <ul class="slide-arrow unliststyle">
+            <li class="arrow-left"><i class="fa fa-chevron-left"></i></li>
+            <li class="arrow-right"><i class="fa fa-chevron-right"></i></li>
+        </ul>
+    </div>
+</div>
+<div class="brand">
+    <ul class="unliststyle brand-stage">
+        <li class="brand-item"><img src="~/wwwroot/public/brand/brand.png" alt=""></li>
+        <li class="brand-item"><img src="~/wwwroot/public/brand/brand.png" alt=""></li>
+        <li class="brand-item"><img src="~/wwwroot/public/brand/brand.png" alt=""></li>
+        <li class="brand-item"><img src="~/wwwroot/public/brand/brand.png" alt=""></li>
+        <li class="brand-item"><img src="~/wwwroot/public/brand/brand.png" alt=""></li>
+        <li class="brand-item"><img src="~/wwwroot/public/brand/brand.png" alt=""></li>
+    </ul>
+    <div class="arrow-left"><i class="fa fa-angle-left"></i></div>
+    <div class="arrow-right"><i class="fa fa-angle-right"></i></div>
+</div>
+<div class="product">
+    <div class="category-product">
+        <h4 class="product-head">Danh sách sản phẩm</h4>
+        <div class="product-list">
+            <div class="col-xs-4">
+                <div class="product-item">
+                    <div class="product-img">
+                        <a href="@Url.Action("Product", "Home")">
+                            
+                            <img src="~/wwwroot/public/book/1.jpg" alt="">
+                            <span class="badge-new">Mới</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-price">
+                            <h4 class="new-price">Giá: 10000</h4>
+                            <span class="percent">-33%</span>
+                            <p class="old-price">Sale off: 130000</p>
+                        </div>
+                        <p class="product-name">Chất lượng giáo dục đại học nhìn từ góc độ hội nhập</p>
+                        <!-- <div class="descrip">Descrip</div> -->
+                    </div>
+                    <div class="product-link">
+                        <ul class="unliststyle">
+                            <li class="product-link-item"><i class="fa fa-cart-plus"></i></li>
+                            <li class="product-link-item"><i class="fa fa-info-circle"></i></li>
+                            <li class="product-link-item"><i class="fa fa-eye"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="product-item">
+                    <div class="product-img">
+                        <a href="@Url.Action("Product", "Home")">
+                            <img src="~/wwwroot/public/book/2.jpg" alt="">
+                            <span class="badge-new">Mới</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-price">
+                            <h4 class="new-price">Giá: 50000</h4>
+                            <span class="percent">-20%</span>
+                            <p class="old-price">Sale off: 100000</p>
+                        </div>
+                        <p class="product-name">Cô nhóc Tiểu Anh Đào XOYTO COMIC (Phần 1)</p>
+                        <!-- <div class="descrip">Descrip</div> -->
+                    </div>
+                    <div class="product-link">
+                        <ul class="unliststyle">
+                            <li class="product-link-item"><i class="fa fa-cart-plus"></i></li>
+                            <li class="product-link-item"><i class="fa fa-info-circle"></i></li>
+                            <li class="product-link-item"><i class="fa fa-eye"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="product-item">
+                    <div class="product-img">
+                        <a href="@Url.Action("Product", "Home")">
+                            <img src="~/wwwroot/public/book/3.jpg" alt="">
+                            <span class="badge-new">Mới</span>
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-price">
+                            <h4 class="new-price">Gía: 100000</h4>
+                            <span class="percent">-33%</span>
+                            <p class="old-price">Sale off: 130000</p>
+                        </div>
+                        <p class="product-name">Điều khiển và giám sát với S7200-S7300 PC ACCESS WINCC</p>
+                        <!-- <div class="descrip">Descrip</div> -->
+                    </div>
+                    <div class="product-link">
+                        <ul class="unliststyle">
+                            <li class="product-link-item"><i class="fa fa-cart-plus"></i></li>
+                            <li class="product-link-item"><i class="fa fa-info-circle"></i></li>
+                            <li class="product-link-item"><i class="fa fa-eye"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="product-item">
+                <div class="product-img">
+                    <a href="@Url.Action("Product", "Home")">
+                        <img src="~/wwwroot/public/book/4.jpg" alt="">
+                        <span class="badge-new">Mới</span>
+                    </a>
+                </div>
+                <div class="product-info">
+                    <div class="product-price">
+                        <h4 class="new-price">Gía: 100000</h4>
+                        <span class="percent">-33%</span>
+                        <p class="old-price">Sale off: 130000</p>
+                    </div>
+                    <p class="product-name">Giáo dục gía trị nghề nghiệp</p>
+                    <!-- <div class="descrip">Descrip</div> -->
+                </div>
+                <div class="product-link">
+                    <ul class="unliststyle">
+                        <li class="product-link-item"><i class="fa fa-cart-plus"></i></li>
+                        <li class="product-link-item"><i class="fa fa-info-circle"></i></li>
+                        <li class="product-link-item"><i class="fa fa-eye"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-4">
+        <div class="product-item">
+            <div class="product-img">
+                <a href="@Url.Action("Product", "Home")">
+                    <img src="~/wwwroot/public/book/5.jpg" alt="">
+                    <span class="badge-new">Mới</span>
+                </a>
+            </div>
+            <div class="product-info">
+                <div class="product-price">
+                    <h4 class="new-price">Gía: 100000</h4>
+                    <span class="percent">-33%</span>
+                    <p class="old-price">Sale off: 130000</p>
+                </div>
+                <p class="product-name">Giáo trình hàn</p>
+                <!-- <div class="descrip">Descrip</div> -->
+            </div>
+            <div class="product-link">
+                <ul class="unliststyle">
+                    <li class="product-link-item"><i class="fa fa-cart-plus"></i></li>
+                    <li class="product-link-item"><i class="fa fa-info-circle"></i></li>
+                    <li class="product-link-item"><i class="fa fa-eye"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+<a href="" class="view-more">
+    <span>Xem thêm</span>
+    <i class="fa fa-angle-right"></i>
+</a>
