@@ -13,5 +13,46 @@ namespace BookStore.Areas.Admin.Controllers
         {
             return View();
         }
+
+        public ActionResult DoanhThu()
+        {
+            return View();
+        }
+
+        public ActionResult NhanVien()
+        {
+            return View();
+        }
+        public ActionResult TacGia()
+        {
+            return View();
+
+        }
+        public ActionResult NguoiDung()
+        {
+            return View();
+
+        }
+
+        public ActionResult DanhMucSach()
+        {
+            return View();
+
+        }
+        public ActionResult NhaXuatBan()
+        {
+            return View();
+
+        }
+        public ActionResult Sach()
+        {
+            return View();
+
+        }
+        public ActionResult KhuyenMai()
+        {
+            return View();
+
+        }
     }
 }
