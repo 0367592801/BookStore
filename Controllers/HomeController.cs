@@ -40,5 +40,20 @@ namespace BookStore.Controllers
         {
             return View();
         }
+
+        public ActionResult ShowListProduct()
+        {
+            return View();
+        }
+
+        public ActionResult ShoppingCart()
+        {
+            return View();
+        }
+
+        public ActionResult DetailBuyer()
+        {
+            return View();
+        }
     }
 }

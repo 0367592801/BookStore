@@ -416,6 +416,7 @@
     <Content Include="wwwroot\css\font-awesome.min.css" />
     <Content Include="wwwroot\css\ownstyle.css" />
     <Content Include="wwwroot\css\responsive.css" />
+    <Content Include="wwwroot\css\shoppingcart.css" />
     <Content Include="wwwroot\fonts\fontawesome-webfont.svg" />
     <Content Include="wwwroot\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="wwwroot\js\bootstrap.js" />
@@ -633,6 +634,8 @@
     <Content Include="Views\Login\Login.cshtml" />
     <Content Include="Views\Login\SignUp.cshtml" />
     <Content Include="Views\Home\Product.cshtml" />
+    <Content Include="Views\Home\ShowListProduct.cshtml" />
+    <Content Include="Views\Home\ShoppingCart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
