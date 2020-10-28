@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+@{ 
+    Html.RenderPartial("_Header");
+}
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<link href="~/wwwroot/css/shoppingcart.css" rel="stylesheet" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+    Kiểm tra lại giỏ hàng và thanh toán, đặt mua.
+    <table id="cart" class="table table-hover table-condensed">
+        <thead>
+
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+
+            <tr>
+                <td><a href="@Url.Action("SignBuyerInformation","Home")" class="btn btn-warning"><i class="fa fa-angle-left"></i>Quay lại</a></td>
+                <td colspan="2" class="hidden-xs"></td>
+                <td><a href="@Url.Action("Index", "Home")" class="btn btn-success btn-block">Xong<i class="fa fa-angle-right"></i></a></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>

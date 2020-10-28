@@ -51,9 +51,21 @@ namespace BookStore.Controllers
             return View();
         }
 
-        public ActionResult DetailBuyer()
+        public ActionResult SignBuyerInformation()
         {
             return View();
         }
+
+        public ActionResult DetailShoppingCart()
+        {
+            return View();
+        }
+
+        public ActionResult UserInformation()
+        {
+            return View();
+        }
+
+        
     }
 }

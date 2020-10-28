@@ -636,6 +636,10 @@
     <Content Include="Views\Home\Product.cshtml" />
     <Content Include="Views\Home\ShowListProduct.cshtml" />
     <Content Include="Views\Home\ShoppingCart.cshtml" />
+    <Content Include="Views\Home\UserInformation.cshtml" />
+    <Content Include="Views\Login\LoginRequire.cshtml" />
+    <Content Include="Views\Home\SignBuyerInformation.cshtml" />
+    <Content Include="Views\Home\DetailShoppingCart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

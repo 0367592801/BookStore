@@ -23,5 +23,10 @@ namespace BookStore.Controllers
         {
             return View();
         }
+
+        public ActionResult LoginRequire()
+        {
+            return View(); 
+        }
     }
 }
