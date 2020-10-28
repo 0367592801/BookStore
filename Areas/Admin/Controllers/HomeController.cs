@@ -59,5 +59,11 @@ namespace BookStore.Areas.Admin.Controllers
             return View();
 
         }
+
+        public ActionResult DonHang()
+        {
+            return View();
+
+        }
     }
 }

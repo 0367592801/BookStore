@@ -123,6 +123,7 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\DanhMucSachController.cs" />
     <Compile Include="Areas\Admin\Controllers\DoanhThuController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DonHangController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\KhuyenMaiController.cs" />
     <Compile Include="Areas\Admin\Controllers\NguoiDungController.cs" />
@@ -562,6 +563,16 @@
     <Content Include="LoginRoot\SignUp\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
     <Content Include="LoginRoot\SignUp\vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="LoginRoot\SignUp\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Areas\Admin\Views\DanhMucSach\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\DoanhThu\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\KhuyenMai\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\NguoiDung\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\NhanVien\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\NhaXuatBan\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Sach\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\TacGia\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\DonHang\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\DonHang.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -637,14 +648,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Areas\Admin\Views\DanhMucSach\" />
-    <Folder Include="Areas\Admin\Views\DoanhThu\" />
-    <Folder Include="Areas\Admin\Views\KhuyenMai\" />
-    <Folder Include="Areas\Admin\Views\NguoiDung\" />
-    <Folder Include="Areas\Admin\Views\NhanVien\" />
-    <Folder Include="Areas\Admin\Views\NhaXuatBan\" />
-    <Folder Include="Areas\Admin\Views\Sach\" />
-    <Folder Include="Areas\Admin\Views\TacGia\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
